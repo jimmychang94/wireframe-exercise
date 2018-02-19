@@ -2,6 +2,10 @@
   font-family: Helvetica, sans-serif;
 }
 
+/********************************************/
+/*******STYLES FOR THE HEADER SECTION********/
+/********************************************/
+
 header, footer {
   background-color: #333;
   height: 100px;
@@ -26,9 +30,14 @@ nav li {
 }
 
 a {
+  font-family: Helvetica, sans-serif;
   text-decoration: none;
   color: #888;
 }
+
+/******************************************/
+/*******STYLES FOR THE MAIN SECTION********/
+/******************************************/
 
 main {
   width: 960px;
@@ -36,46 +45,62 @@ main {
 }
 
 main ul {
-  padding: 0px;
+  padding-left: 0px;
 }
 
 main li {
-  display: inline-block;
-  padding-right: 25px;
-}
-
-.end {
-  padding: 0px;
-}
-
-main section {
-  height: 400px;
-}
-
-main section img {
+  list-style: none;
   float: left;
-  margin-right: 30px;
+  margin-top: 30px;
 }
 
+main li:nth-child(2) {
+  margin: 30px 30px 30px 30px;
+}
 
-main section div h2 {
+section img {
+  float: left;
+}
+
+section div {
+  width: calc(50% - 30px);
+  float: left;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+section h2 {
+  font-size: 20px;
+  margin-top: 0px;
   margin-bottom: 0px;
 }
 
-main section div p {
-  font-style: italic;
-  margin-top: 0px;
-  height: 300px;
+section div p {
+  height: 330px;
   overflow: auto;
+  font-style: italic;
+  line-height: 24px;
 }
 
 button {
-  padding: 10px 60px;
-  background-color: black;
-  color: white;
+  border: none;
+  padding: 10px 30px;
+  background-color: #000;
+  color: #FFF;
+  border-radius: 3px;
+  font-size: 18px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 350ms;
 }
 
 button:hover {
-  background-color: #F33;
-  color: black;
+  background-color: green;
+}
+
+/********************************************/
+/*******STYLES FOR THE FOOTER SECTION********/
+/********************************************/
+footer {
+  clear: both;
 }
